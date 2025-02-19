@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "536c68b9-90f5-4914-ae20-0eea70b7a358",
+		"name": "Foodics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28977275",
+		"_collection_link": "https://planetary-crescent-230738.postman.co/workspace/Team-Workspace~1c27f379-c9e1-4e77-82a0-1b7048fb351a/collection/28977275-536c68b9-90f5-4914-ae20-0eea70b7a358?action=share&source=collection_link&creator=28977275"
+	},
+	"item": [
+		{
+			"name": "store_order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"products\": [\n        {\n            \"product_id\": 2,\n            \"quantity\": 20\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/store_order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store_order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
